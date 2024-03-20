@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Encriptador de texto 
+        </h1>
+    </header>
+    
+    <main>
+        
+        <section class="campo-texto">
+            <p>Ingresa el texto aquí.</p>
+            <textarea name="" id="textInput" cols="40" rows="11"></textarea>
+            <p class="information">&#128712; Sólo letras minúsculas y sin acentos</p>
+
+            <div class="botones">
+                <button class="boton-principal" id="botonEncriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-principal" id="botonDesencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <textarea name="" id="outputArea" cols="15" rows="14" disabled></textarea>
+            <div class="mensajes-resultado">
+                    <p class="mensaje-principal">No se encontró ningún mensaje</p>
+                    <p>¡Intenta encriptar o desencriptar un mensaje!</p>
+            </div>
+            <div class="botones botonCopiar">
+                <button class="boton-principal" id="botonCopiar" onclick="copiarAlPortapapeles()" disabled>Copiar</button>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Made with love by Candela &#9825; - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
