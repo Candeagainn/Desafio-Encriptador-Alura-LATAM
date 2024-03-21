@@ -205,27 +205,29 @@ footer p {
         height: 100%;
         width: 100%;
         margin: 0px auto;
-
     }
 
     main {
         display: flex;
         flex-direction: column;
         padding: 0 5%;
-        position: relative;
+        background-image: linear-gradient(180deg, #FFF, #d8eb61);
         
     }
-    
-    main::before {
+    h1{
+        position: relative;
+
+    }
+    h1::before {
         content: '';
         /* Obligatorio para los pseudo-elementos */
         position: absolute;
         /* Posicionamiento absoluto para que el pseudo-elemento quede detrás del elemento principal */
-        top: -6px;
+        top: -5px;
         /* Posicionamiento para superponer el borde sobre el contenido */
-        left: 10px;
+        left: -5px;
         /* Posicionamiento para superponer el borde sobre el contenido */
-        right: 10px;
+        right: -5px;
         /* Posicionamiento para superponer el borde sobre el contenido */
         bottom: -5px;
         /* Posicionamiento para superponer el borde sobre el contenido */
@@ -239,6 +241,12 @@ footer p {
     
     }
 
+    header h1{
+        font-family: "Maven Pro", sans-serif;
+        font-size: 2em;
+        margin-bottom: 2%;
+
+    }
 
     section {
         width: 100%;
@@ -260,9 +268,17 @@ footer p {
     button{
         padding: 15px 40px;
         margin: 0 5px;
+        border-radius: 30px;
     }
-    
+    #botonDesencriptar{
+        border: 1px solid #d8eb61;
+        ;
+    }
     }
     .resultado::before{
         display: none;
+    }
+
+    footer{
+        margin-top: 0;
     }
