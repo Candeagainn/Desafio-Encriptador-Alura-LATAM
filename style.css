@@ -213,6 +213,7 @@ footer p {
         flex-direction: column;
         padding: 0 5%;
         position: relative;
+        
     }
     
     main::before {
@@ -259,6 +260,8 @@ footer p {
     button{
         padding: 15px 40px;
         margin: 0 5px;
+    }
+    
     }
     .resultado::before{
         display: none;
