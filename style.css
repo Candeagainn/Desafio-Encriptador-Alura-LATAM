@@ -11,12 +11,14 @@ body {
 header {
     margin: 0px 10% 0em;
 }
+
 header h1 {
     font-family: "Ms Madi", cursive;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 3em;
     margin-bottom: -1%;
-    text-shadow: 0 0 10px #fbceff, 0 0 20px #fbceff, 0 0 30px #fbceff, 0 0 40px #fbceff, 0 0 70px #fbceff, 0 0 80px #fbceff, 0 0 100px #fbceff, 0 0 150px #fbceff; /* Efecto de luz de neón con el color #fbceff */
+    text-shadow: 0 0 10px #fbceff, 0 0 20px #fbceff, 0 0 30px #fbceff, 0 0 40px #fbceff, 0 0 70px #fbceff, 0 0 80px #fbceff, 0 0 100px #fbceff, 0 0 150px #fbceff;
+    /* Efecto de luz de neón con el color #fbceff */
 
 }
 
@@ -189,6 +191,75 @@ footer {
     display: flex;
     justify-content: center;
 }
-footer p{
+
+footer p {
     margin: 0px 1%;
 }
+
+@media screen and (max-width: 468px) {
+    html {
+        height: fit-content;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0px auto;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5%;
+        position: relative;
+    }
+    
+    main::before {
+        content: '';
+        /* Obligatorio para los pseudo-elementos */
+        position: absolute;
+        /* Posicionamiento absoluto para que el pseudo-elemento quede detrás del elemento principal */
+        top: -6px;
+        /* Posicionamiento para superponer el borde sobre el contenido */
+        left: 10px;
+        /* Posicionamiento para superponer el borde sobre el contenido */
+        right: 10px;
+        /* Posicionamiento para superponer el borde sobre el contenido */
+        bottom: -5px;
+        /* Posicionamiento para superponer el borde sobre el contenido */
+        z-index: -1;
+        /* Colocar el pseudo-elemento detrás del contenido */
+        border: 5px solid;
+        /* Tamaño del borde */
+        border-image: linear-gradient(90deg, #fbceff, #d8eb61) 1;
+        /* Usar un gradiente como imagen de borde */
+        border-radius: 20px;
+    
+    }
+
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #textInput {
+        width: 90%;
+    }
+    #textInput::placeholder {
+        text-align: center;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        padding: 0 5%;
+    }
+    button{
+        padding: 15px 40px;
+        margin: 0 5px;
+    }
+    .resultado::before{
+        display: none;
+    }
