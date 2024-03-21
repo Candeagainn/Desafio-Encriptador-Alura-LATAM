@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
@@ -8,54 +8,50 @@ body{
 
 }
 
-header{
-    margin: 0 10% 2em;
-    position: relative;
+header {
+    margin: 0px 10% 0em;
+}
+header h1 {
+    font-family: "Ms Madi", cursive;
+    font-weight:bold;
+    font-size: 3em;
+    margin-bottom: -1%;
+    text-shadow: 0 0 10px #fbceff, 0 0 20px #fbceff, 0 0 30px #fbceff, 0 0 40px #fbceff, 0 0 70px #fbceff, 0 0 80px #fbceff, 0 0 100px #fbceff, 0 0 150px #fbceff; /* Efecto de luz de neón con el color #fbceff */
 
 }
 
-.header h1::before {
-    content: ''; /* Obligatorio para los pseudo-elementos */
-    position: absolute; /* Posicionamiento absoluto para que el pseudo-elemento quede detrás del elemento principal */
-    top: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    left: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    right: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    bottom: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    z-index: -1; /* Colocar el pseudo-elemento detrás del contenido */
-    border: 5px solid; /* Tamaño del borde */ 
-    border-image: linear-gradient(90deg, #fbceff, #d8eb61) 1; /* Usar un gradiente como imagen de borde */
-    border-radius: 20px;
 
-}
 
-p{
+p {
     margin: 0 10%;
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: 70% 30%;
     padding: 0 6%;
     height: 80%;
-    
+
 }
-section{
+
+section {
     text-align: center;
     border-radius: 20px;
     padding: 2px;
     margin: 5px 20px;
 }
 
-.campo-texto p{
+.campo-texto p {
     text-align: start;
 
 }
 
-.campo-texto{
+.campo-texto {
     height: fit-content;
-    
+
 }
-textarea{
+
+textarea {
     border-radius: 20px;
     border: none;
     padding: 10px;
@@ -65,60 +61,81 @@ textarea{
     color: #151115;
     font-size: 2em;
 
-}  
+}
 
-#textInput{
+#textInput {
     margin-top: 2%;
     padding: 10px;
-    /* box-shadow:  0px 10px 20px #fbceff; */
+}
+
+#textInput::placeholder {
+    font-size: .5em;
+    font-family: "Maven Pro", sans-serif;
 
 }
-.resultado{
+
+.resultado {
     position: relative;
     bottom: 10%;
     background-color: #FFFFFF;
     border-radius: 20px;
 }
+
 .resultado::before {
-    content: ''; /* Obligatorio para los pseudo-elementos */
-    position: absolute; /* Posicionamiento absoluto para que el pseudo-elemento quede detrás del elemento principal */
-    top: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    left: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    right: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    bottom: -5px; /* Posicionamiento para superponer el borde sobre el contenido */
-    z-index: -1; /* Colocar el pseudo-elemento detrás del contenido */
-    border: 5px solid; /* Tamaño del borde */ 
-    border-image: linear-gradient(90deg, #fbceff, #d8eb61) 1; /* Usar un gradiente como imagen de borde */
+    content: '';
+    /* Obligatorio para los pseudo-elementos */
+    position: absolute;
+    /* Posicionamiento absoluto para que el pseudo-elemento quede detrás del elemento principal */
+    top: -5px;
+    /* Posicionamiento para superponer el borde sobre el contenido */
+    left: -5px;
+    /* Posicionamiento para superponer el borde sobre el contenido */
+    right: -5px;
+    /* Posicionamiento para superponer el borde sobre el contenido */
+    bottom: -5px;
+    /* Posicionamiento para superponer el borde sobre el contenido */
+    z-index: -1;
+    /* Colocar el pseudo-elemento detrás del contenido */
+    border: 5px solid;
+    /* Tamaño del borde */
+    border-image: linear-gradient(90deg, #fbceff, #d8eb61) 1;
+    /* Usar un gradiente como imagen de borde */
     border-radius: 20px;
 
 }
-#outputArea{
+
+#outputArea {
     background-image: url(images/hand-drawn-magnifying-glass-by-Vexels.png);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 
-.mensajes-resultado{
+.mensajes-resultado {
     margin-top: -25%;
     margin-bottom: 15%;
     font-size: 0.8em;
-    opacity: 1; /* Opacidad inicial */
-    transition: opacity 0.5s ease; 
+    opacity: 1;
+    /* Opacidad inicial */
+    transition: opacity 0.5s ease;
 }
-.mensaje-principal{
+
+.mensaje-principal {
     font-size: 1.2em;
     font-weight: 600;
 }
 
-.information{
+.information {
     font-size: 0.8em;
-    font-weight: 400;
-    margin-top: -1%
+    font-weight: 600;
+    opacity: .7;
+    margin-top: -1%;
+    margin-left: 10%;
 }
-.botones{
-   margin: 3% auto;
+
+.botones {
+    margin: 3% auto;
 }
 
 button {
@@ -143,14 +160,15 @@ button:hover {
     border: none;
     transition: all 0.1s ease 0s;
 }
- #botonDesencriptar{
+
+#botonDesencriptar {
     background-color: #FFFFFF;
     border: 2px solid #fbceff;
     padding: 18px 55px;
 }
 
 
-#botonDesencriptar:hover{
+#botonDesencriptar:hover {
     background-color: #fbceff;
     /*
     border: none;
@@ -158,14 +176,19 @@ button:hover {
 
 }
 
-.botonCopiar{
+.botonCopiar {
     margin: 5% auto;
 }
 
-footer{   
+footer {
     margin-top: 2%;
     padding: 20px;
     text-align: center;
     font-size: .9em;
     background-color: #d8eb61;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    margin: 0px 1%;
 }
