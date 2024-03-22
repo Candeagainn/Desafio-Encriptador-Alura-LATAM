@@ -108,7 +108,7 @@
 
     #outputArea {
         background-image: url(images/hand-drawn-magnifying-glass-by-Vexels.png);
-        background-size: contain;
+        background-size: 80%;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
