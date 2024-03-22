@@ -42,4 +42,6 @@ Versión escritorio
 ![image](https://github.com/Candeagainn/Desafio-Encriptador-Alura-LATAM/assets/104110428/71ba3b2e-7714-4dc8-8534-6c04ddcd622c)
 
 Versión mobile 1.3
-<img src="https://imgur.com/a/CMyBbBY">
+---
+![image](https://github.com/Candeagainn/Desafio-Encriptador-Alura-LATAM/assets/104110428/33d2f956-2bb2-49a4-9f63-6ab0e3c341b8)
+
