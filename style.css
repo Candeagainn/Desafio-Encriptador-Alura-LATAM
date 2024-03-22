@@ -116,7 +116,7 @@
 
     .mensajes-resultado {
         margin-top: -25px;
-        margin-bottom: 15%;
+        margin-bottom: 15px;
         font-size: 0.8em;
         opacity: 1;
         /* Opacidad inicial */
@@ -286,6 +286,8 @@ button {
 
 #outputArea {
     height: 361px;
+}
+
 }
 
 footer p {
