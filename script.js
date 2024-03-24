@@ -8,6 +8,9 @@ const mensajesResultado = document.querySelector('.mensajes-resultado');
 
 const llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
 
+let validation = /^[a-z\s]*$/;
+
+
 
 
 // Función para conectar el botón de encriptar con la función encriptar
@@ -16,7 +19,7 @@ const llavesEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "o
 function botonEncriptar() {
     let textoEncriptado = encriptarTexto(textInput.value);
 
-    if (/[A-ZÁÉÍÓÚÜ0-9]/.test(textInput.value)) { //Verifica si el texto ingresado tiene mayusculas, numeros o acentos
+    if (!validation.test(textInput.value)) { //Verifica si el texto ingresado tiene mayusculas, numeros o acentos
         alert('No se admiten mayúsculas, acentos, ni números');
     } else {
         asignarTexto(outputArea, textoEncriptado);
@@ -33,8 +36,8 @@ function botonEncriptar() {
 function botonDesencriptar() {
     let textoDesencriptado = desencriptarTexto(textInput.value);
 
-    if (/[A-ZÁÉÍÓÚÜ0-9]/.test(textInput.value)) { //Verifica si el texto ingresado tiene mayusculas, numeros o acentos
-        alert('No se admiten mayúsculas, acentos, ni números.');
+    if (!validation.test(textInput.value)) { //Verifica si el texto ingresado tiene mayusculas, numeros o acentos
+        alert('No se admiten mayúsculas, acentos, ni números');
     } else {
 
         asignarTexto(outputArea, textoDesencriptado);
